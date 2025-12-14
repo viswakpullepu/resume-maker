@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Resume Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="editor">
+      <h1>Resume Maker</h1>
+
+      <label>Full Name
+        <input id="nameInput" type="text" placeholder="Your name">
+      </label>
+
+      <label>Title
+        <input id="titleInput" type="text" placeholder="e.g. Software Developer">
+      </label>
+
+      <label>Email
+        <input id="emailInput" type="email" placeholder="you@example.com">
+      </label>
+
+      <label>Phone
+        <input id="phoneInput" type="text" placeholder="+91-1234567890">
+      </label>
+
+      <label>Summary
+        <textarea id="summaryInput" rows="3" placeholder="Short summary about you"></textarea>
+      </label>
+
+      <h2>Education</h2>
+      <label>Institution
+        <input id="eduSchoolInput" type="text" placeholder="College / School">
+      </label>
+      <label>Degree / Class
+        <input id="eduDegreeInput" type="text" placeholder="B.Tech CSE / 12th etc.">
+      </label>
+      <label>Year
+        <input id="eduYearInput" type="text" placeholder="2025">
+      </label>
+
+      <h2>Skills</h2>
+      <small>One skill per line</small>
+      <textarea id="skillsInput" rows="4" placeholder="Java\nHTML\nCSS\nJavaScript"></textarea>
+
+      <h2>Experience / Projects</h2>
+      <small>One bullet per line</small>
+      <textarea id="expInput" rows="5" placeholder="Built a resume maker using HTML, CSS, JS"></textarea>
+
+      <button id="printBtn" type="button">Print / Save as PDF</button>
+    </section>
+
+    <section class="preview" id="resume">
+      <header>
+        <h1 id="previewName">Your Name</h1>
+        <h2 id="previewTitle">Your Title</h2>
+        <p>
+          <span id="previewEmail">you@example.com</span> ·
+          <span id="previewPhone">+91-1234567890</span>
+        </p>
+      </header>
+
+      <section>
+        <h3>Summary</h3>
+        <p id="previewSummary">Write a short summary about your skills and goals.</p>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <p id="previewEduSchool"><strong>College / School</strong></p>
+        <p id="previewEduDegree">Degree / Class</p>
+        <p id="previewEduYear">Year</p>
+      </section>
+
+      <section>
+        <h3>Skills</h3>
+        <ul id="previewSkills">
+          <li>Skill 1</li>
+          <li>Skill 2</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Experience / Projects</h3>
+        <ul id="previewExp">
+          <li>Example project or experience bullet.</li>
+        </ul>
+      </section>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
